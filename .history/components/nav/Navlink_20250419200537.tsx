@@ -1,0 +1,15 @@
+import { links } from "@/data/NavLink";
+import Link from "next/link";
+
+const Navlink = () => {
+  return (
+    <ul className="flex gap-4">
+      {links.map((nav, index) => (
+        <li key={index} className="text-lg font-semibold text-text">
+          <Link href={nav.href}>{nav.label}</Link>
+        </li>
+      ))}
+    </ul>
+  );
+};
+export default Navlink;

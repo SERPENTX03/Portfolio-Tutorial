@@ -1,0 +1,32 @@
+export const techStacks = {
+  languages: [
+    { id: 1, name: "JavaScript" },
+    { id: 2, name: "TypeScript" },
+    { id: 3, name: "Python" },
+    { id: 4, name: "Java" },
+    { id: 5, name: "Go" },
+    { id: 6, name: "Rust" },
+    { id: 7, name: "C#" },
+    { id: 8, name: "PHP" },
+  ],
+  frameworks: [
+    { id: 1, name: "React" },
+    { id: 2, name: "Next.js" },
+    { id: 3, name: "Vue.js" },
+    { id: 4, name: "Nuxt" },
+    { id: 5, name: "Svelte" },
+    { id: 6, name: "Express" },
+    { id: 7, name: "NestJS" },
+    { id: 8, name: "Laravel" },
+  ],
+  databases: [
+    { id: 1, name: "MongoDB" },
+    { id: 2, name: "PostgreSQL" },
+    { id: 3, name: "MySQL" },
+    { id: 4, name: "SQLite" },
+    { id: 5, name: "Firebase" },
+    { id: 6, name: "Supabase" },
+    { id: 7, name: "Redis" },
+    { id: 8, name: "Prisma" },
+  ],
+};

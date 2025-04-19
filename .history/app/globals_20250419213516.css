@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1dcd9f;
+  --color-background: #222222;
+  --color-text: #9f9fa9;
+}
+
+@utility hover-btn {
+  @apply hover:bg-primary/30 transition-colors duration-300 ease-in-out border border-primary px-4 py-2 mt-14 cursor-pointer;
+}
+
+body {
+  background-color: var(--color-background);
+  color: white;
+}
+
+.pattern {
+  background: linear-gradient(
+      45deg,
+      transparent 14%,
+      #1dcd9f 15%,
+      #1dcd9f 20%,
+      transparent 21%,
+      transparent 79%,
+      #1dcd9f 80%,
+      #1dcd9f 85%,
+      transparent 86%
+    ),
+    linear-gradient(
+      135deg,
+      transparent 14%,
+      #1dcd9f 15%,
+      #1dcd9f 20%,
+      transparent 21%,
+      transparent 79%,
+      #1dcd9f 80%,
+      #1dcd9f 85%,
+      transparent 86%
+    ),
+    radial-gradient(transparent 14%, #1dcd9f 15%, #1dcd9f 25%, transparent 26%);
+  background-size: 3em 3em;
+  opacity: 1;
+}

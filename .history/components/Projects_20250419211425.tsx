@@ -1,0 +1,22 @@
+import { projects } from "@/data/Project";
+import { div } from "framer-motion/client";
+import Link from "next/link";
+
+const Projects = () => {
+  return (
+    <section className="mt-24">
+      <div className="flex justify-between items-center">
+        <h2 className="text-3xl font-bold">Projects</h2>
+        <Link className="text-xl underline" href="/projects">
+          View All ={">"}
+        </Link>
+      </div>
+      <div className="grid gird-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        {projects.map((project) => (
+          <div key={project.id} className="border border-text"></div>
+        ))}
+      </div>
+    </section>
+  );
+};
+export default Projects;
